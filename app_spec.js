@@ -17,6 +17,7 @@ function pressEnterKey(input) {
   var enterKeyEvent = document.createEvent('Event');
   enterKeyEvent.initEvent('keyup');
   enterKeyEvent.keyCode = 13;
+  enterKeyEvent.which = 13;
   input.dispatchEvent(enterKeyEvent);
 }
 
